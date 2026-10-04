@@ -76,12 +76,8 @@
     return '<svg class="' + (cls || "") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[name] || "") + "</svg>";
   }
 
-  var LOGO =
-    '<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">' +
-    '<rect width="40" height="40" rx="12" fill="#223a5e"/>' +
-    '<path d="M7 27c4.2-8.5 8.6-12.7 13-12.7S28.8 18.5 33 27" fill="none" stroke="#f2b089" stroke-width="3" stroke-linecap="round"/>' +
-    '<path d="M11.5 27v-5.5M16 27v-8.6M20 27v-9.7M24 27v-8.6M28.5 27v-5.5" stroke="#fbf7f0" stroke-width="2" stroke-linecap="round"/>' +
-    '<circle cx="20" cy="10" r="2.4" fill="#f2b089"/></svg>';
+  var LOGO = '<img class="brand-mark" src="assets/logo-mark.png" alt="" width="48" height="48">';
+  var TAGLINE = '<small class="tagline"><span style="color:#2f6fd6">Every</span> <span style="color:#3f9a4a">Mind</span> <span style="color:#f08a1c">Shines</span></small>';
 
   var NAV = [
     { href: "knowledge.html", zh: "自闭症知识", en: "Understanding Autism" },
@@ -112,7 +108,7 @@
       '<a class="skip" href="#main">' + bi({ zh: "跳到主要内容", en: "Skip to content" }) + "</a>" +
       '<div class="wrap header-in">' +
       '<a class="brand" href="index.html" aria-label="MindBridge">' + LOGO +
-      '<span class="brand-name">MindBridge<small>' + bi({ zh: "自闭症社群", en: "Autism Community" }) + "</small></span></a>" +
+      '<span class="brand-name">MindBridge' + TAGLINE + "</span></a>" +
       '<nav class="nav" id="nav" aria-label="Main">' + links + "</nav>" +
       '<div class="header-tools">' +
       '<div class="lang-switch" role="group" aria-label="Language / 语言">' +
@@ -142,7 +138,7 @@
     };
     return (
       '<div class="wrap"><div class="footer-grid">' +
-      '<div><a class="brand" href="index.html">' + LOGO + '<span class="brand-name">MindBridge<small>' + bi({ zh: "自闭症社群", en: "Autism Community" }) + "</small></span></a>" +
+      '<div><a class="brand" href="index.html">' + LOGO + '<span class="brand-name">MindBridge' + TAGLINE + "</span></a>" +
       '<p style="margin-top:18px;max-width:30em">' +
       bi({ zh: "一个由美国高中生发起的自闭症社群项目：可信科普、具体的志愿任务、资源导航，以及来源透明的创作者作品。", en: "An autism community project started by a U.S. high-school student: trustworthy information, concrete volunteer tasks, resource navigation and transparently sourced creator work." }) +
       "</p></div>" +
