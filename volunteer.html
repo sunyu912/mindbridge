@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>志愿者中心 · MindBridge</title>
+<meta name="mb-title-zh" content="志愿者中心 · MindBridge">
+<meta name="mb-title-en" content="Volunteer Centre · MindBridge">
+<meta name="description" content="MindBridge 志愿者中心：资料核验、翻译、无障碍测试、设计、活动支持与创作者支持岗位，以及清楚的服务边界和行为准则。Volunteer roles, boundaries and code of conduct for the MindBridge autism community project.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23223a5e'/%3E%3Cpath d='M7 27c4.2-8.5 8.6-12.7 13-12.7S28.8 18.5 33 27' fill='none' stroke='%23f2b089' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>(function(){var d=document.documentElement;try{var q=new URLSearchParams(location.search).get("lang"),s=localStorage.getItem("mb-lang");d.dataset.lang=q||s||"zh";d.lang=d.dataset.lang==="en"?"en":"zh-CN";d.dataset.size=localStorage.getItem("mb-size")||"m";d.dataset.calm=localStorage.getItem("mb-calm")||"off";var t=localStorage.getItem("mb-theme");if(t&&t!=="auto")d.dataset.theme=t;}catch(e){d.dataset.lang="zh";}})();</script>
+<style>
+  [hidden] { display: none !important; }
+  .role-card { display: flex; flex-direction: column; height: 100%; }
+  .role-card .role-n { position: absolute; top: 26px; right: 28px; font: 500 .8rem/1 var(--body); letter-spacing: .12em; color: var(--ink-3); }
+  .role-card .chip { margin-top: auto; align-self: flex-start; }
+  .conduct { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .conduct > div { padding: 26px; border-radius: var(--radius); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); display: grid; gap: 12px; align-content: start; }
+  .conduct .card-icon { margin: 0; background: rgba(242,176,137,.16); color: #f2b089; }
+  .conduct p { margin: 0; color: #dfe5ef; }
+  @media (max-width: 960px) { .conduct { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .conduct { grid-template-columns: 1fr; } }
+  .form-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 44px); box-shadow: var(--shadow); }
+  .form fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; min-width: 0; }
+  .form legend { font-weight: 600; font-size: .92rem; padding: 0; margin-bottom: 8px; }
+  .opt-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  @media (max-width: 560px) { .opt-grid { grid-template-columns: 1fr; } }
+  .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 12px; cursor: pointer; font-size: .92rem; line-height: 1.5; background: var(--card); transition: border-color .2s, background .2s; }
+  .opt:has(input:checked) { border-color: var(--indigo); background: var(--indigo-soft); }
+  .field .opt input, .opt input { width: 20px; height: 20px; padding: 0; margin: 2px 0 0; flex-shrink: 0; accent-color: var(--indigo); }
+  .field .opt { font-weight: 500; }
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 560px) { .row-2 { grid-template-columns: 1fr; } }
+  .opt-tag { font-weight: 500; color: var(--ink-3); font-size: .85em; }
+  .minor-box { padding: 20px; border-radius: 16px; border: 1.5px dashed var(--terra); background: var(--terra-soft); display: grid; gap: 10px; }
+  .side-card { padding: 26px; border-radius: var(--radius); background: var(--paper-2); border: 1px solid var(--line); }
+  .side-card h3 { font-family: var(--body); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .side-card p { font-size: .92em; color: var(--ink-2); }
+  .form-msg .note-box { margin-top: 4px; }
+  .conduct-intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 5vw, 72px); align-items: center; margin-bottom: clamp(32px, 4vw, 52px); }
+  .conduct-intro .page-hero-art { aspect-ratio: 1 / 1; max-width: 460px; width: 100%; justify-self: end; }
+  @media (max-width: 860px) { .conduct-intro { grid-template-columns: 1fr; } .conduct-intro .page-hero-art { justify-self: stretch; max-width: none; aspect-ratio: 4 / 3.2; } }
+</style>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">志愿者中心</span><span lang="en">Volunteer Centre</span></span>
+        <h1><span lang="zh-CN">志愿服务从清楚的小任务开始</span><span lang="en">Volunteering starts with one clear, small task</span></h1>
+        <p class="lede"><span lang="zh-CN">按你的时间和特长，选一件清楚的小任务开始。欢迎自闭症人士、家庭、学生和社区伙伴。</span><span lang="en">Pick one clear, small task that fits your time and skills. Autistic people, families, students and neighbours all welcome.</span></p>
+        <div class="btn-row mt-2">
+          <a class="btn btn-terra" href="#roles"><span lang="zh-CN">查看当前岗位</span><span lang="en">See current roles</span></a>
+          <a class="btn btn-ghost" href="#apply"><span lang="zh-CN">申请成为志愿者</span><span lang="en">Apply to volunteer</span></a>
+        </div>
+      </div>
+      <div class="page-hero-art reveal">
+        <img src="assets/vol.jpg" data-alt-zh="蓝橙色调插画：不同年龄和肤色的志愿者围坐在长桌旁，用笔记本电脑、设计稿和手绘草图一起工作，窗外是蓝色山峦和橙色太阳。" data-alt-en="Blue-and-orange painterly illustration: volunteers of different ages and backgrounds work together at a long table with laptops, layouts and sketches, blue hills and an orange sun through arched windows." alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS STRIP ============ -->
+  <section class="bg-2">
+    <div class="wrap honest">
+      <div><b><span lang="zh-CN">从小任务开始</span><span lang="en">Small tasks first</span></b><span><span lang="zh-CN">每个岗位都有清楚、具体的任务</span><span lang="en">Every role has a clear, concrete task</span></span></div>
+      <div><b><span lang="zh-CN">线上或线下</span><span lang="en">Online or in person</span></b><span><span lang="zh-CN">按你的时间和能力选择</span><span lang="en">Choose what fits your time and skills</span></span></div>
+      <div><b><span lang="zh-CN">成人监督</span><span lang="en">Adult oversight</span></b><span><span lang="zh-CN">敏感任务由成人指导人审核</span><span lang="en">Sensitive tasks are reviewed by an adult advisor</span></span></div>
+      <div><b><span lang="zh-CN">无需公开诊断</span><span lang="en">No disclosure needed</span></b><span><span lang="zh-CN">参与不以诊断或个人经历为条件</span><span lang="en">Taking part never depends on a diagnosis or story</span></span></div>
+    </div>
+  </section>
+
+  <!-- ============ ROLES ============ -->
+  <section class="section" id="roles">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">当前岗位</span><span lang="en">Current roles</span></span>
+        <h2><span lang="zh-CN">六个岗位，选一个适合你的</span><span lang="en">Six roles — pick yours</span></h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card role-card reveal">
+          <span class="role-n">01</span>
+          <span class="card-icon" data-icon="search"></span>
+          <h3><span lang="zh-CN">资料核验志愿者</span><span lang="en">Fact-checking volunteer</span></h3>
+          <p><span lang="zh-CN">核对文章是否引用CDC、NIH等可信原始来源，并记录更新时间。</span><span lang="en">Check articles cite trusted original sources (CDC, NIH…) and log update dates.</span></p>
+          <span class="chip"><span lang="zh-CN">可远程</span><span lang="en">Remote</span></span>
+        </article>
+        <article class="card role-card reveal">
+          <span class="role-n">02</span>
+          <span class="card-icon terra" data-icon="globe"></span>
+          <h3><span lang="zh-CN">中英文内容志愿者</span><span lang="en">Chinese–English content volunteer</span></h3>
+          <p><span lang="zh-CN">翻译和简化公开资料，保留统计范围、年份和不确定性。</span><span lang="en">Translate and simplify public materials, keeping each statistic's scope, year and uncertainty.</span></p>
+          <span class="chip"><span lang="zh-CN">可远程</span><span lang="en">Remote</span></span>
+        </article>
+        <article class="card role-card reveal">
+          <span class="role-n">03</span>
+          <span class="card-icon sage" data-icon="a11y"></span>
+          <h3><span lang="zh-CN">无障碍测试志愿者</span><span lang="en">Accessibility testing volunteer</span></h3>
+          <p><span lang="zh-CN">测试字体、颜色、键盘操作、替代文字、动画和表单是否好用。</span><span lang="en">Test fonts, colours, keyboard use, alt text, animation and forms.</span></p>
+          <span class="chip"><span lang="zh-CN">可远程</span><span lang="en">Remote</span></span>
+        </article>
+        <article class="card role-card reveal">
+          <span class="role-n">04</span>
+          <span class="card-icon sage" data-icon="pen"></span>
+          <h3><span lang="zh-CN">设计与影像志愿者</span><span lang="en">Design &amp; imagery volunteer</span></h3>
+          <p><span lang="zh-CN">经授权制作图片和活动材料；不使用未经许可的儿童照片。</span><span lang="en">Create images and materials with permission — never children's photos without consent.</span></p>
+          <span class="chip"><span lang="zh-CN">可远程</span><span lang="en">Remote</span></span>
+        </article>
+        <article class="card role-card reveal">
+          <span class="role-n">05</span>
+          <span class="card-icon" data-icon="users"></span>
+          <h3><span lang="zh-CN">活动支持志愿者</span><span lang="en">Event support volunteer</span></h3>
+          <p><span lang="zh-CN">协助签到、场地指引、安静空间和物资。</span><span lang="en">Help with check-in, signage, the quiet space and supplies.</span></p>
+          <span class="chip terra"><span lang="zh-CN">线下 · 成人指导人审核</span><span lang="en">In person · advisor-reviewed</span></span>
+        </article>
+        <article class="card role-card reveal">
+          <span class="role-n">06</span>
+          <span class="card-icon terra" data-icon="store"></span>
+          <h3><span lang="zh-CN">创作者支持志愿者</span><span lang="en">Creator support volunteer</span></h3>
+          <p><span lang="zh-CN">整理作品信息、授权、定价、订单和收入记录。</span><span lang="en">Organise artwork details, permissions, pricing, orders and income records.</span></p>
+          <span class="chip terra"><span lang="zh-CN">涉及资金 · 成人指导人审核</span><span lang="en">Involves money · advisor-reviewed</span></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOUNDARIES ============ -->
+  <section class="section bg-2" id="boundaries">
+    <div class="wrap split wide-left">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">志愿服务边界</span><span lang="en">Boundaries</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">清楚的边界，让每个人都更安全</span><span lang="en">Clear boundaries keep everyone safer</span></h2>
+        <div class="note-box terra mt-3">
+          <span data-icon="shield"></span>
+          <div>
+            <p><span lang="zh-CN">志愿者不提供诊断、心理咨询、治疗建议或危机干预。未经项目负责人和成人指导人批准，志愿者不得与未成年人进行私人一对一联系，不得索取诊断记录、学校文件、住址或其他不必要的敏感信息。</span><span lang="en">Volunteers do not provide diagnosis, counselling, treatment advice or crisis support. Without approval from the project lead and the adult advisor, volunteers may not contact minors privately one-to-one, and may not ask for diagnostic records, school documents, home addresses or any other unnecessary sensitive information.</span></p>
+          </div>
+        </div>
+        <div class="note-box mt-2">
+          <span data-icon="info"></span>
+          <div>
+            <p><span lang="zh-CN">涉及线下活动、儿童、资金、商品或个人故事的任务，由成人指导人审核，并遵守当地法律、学校规则和合作机构要求。</span><span lang="en">Tasks involving in-person events, children, money, products or personal stories are advisor-reviewed and follow local law, school rules and partner requirements.</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card" style="padding:32px">
+          <h3 style="font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:20px"><span lang="zh-CN">志愿者不会做的事</span><span lang="en">What volunteers don't do</span></h3>
+          <ul class="checks crosses">
+            <li><span><span lang="zh-CN">不提供诊断</span><span lang="en">No diagnosis</span></span></li>
+            <li><span><span lang="zh-CN">不提供心理咨询或治疗建议</span><span lang="en">No counselling or treatment advice</span></span></li>
+            <li><span><span lang="zh-CN">不提供危机干预</span><span lang="en">No crisis intervention</span></span></li>
+            <li><span><span lang="zh-CN">未经批准，不与未成年人私人一对一联系</span><span lang="en">No private one-to-one contact with minors without approval</span></span></li>
+            <li><span><span lang="zh-CN">不索取诊断记录、学校文件、住址或其他不必要的敏感信息</span><span lang="en">No requests for diagnostic records, school documents, addresses or other unnecessary sensitive information</span></span></li>
+            <li><span><span lang="zh-CN">不以本站名义提供私人咨询</span><span lang="en">No private consulting in MindBridge's name</span></span></li>
+          </ul>
+          <p class="muted mt-2" style="font-size:.88rem;margin-bottom:0"><span lang="zh-CN">本站不提供危机干预。如果你或他人面临立即危险，请拨打 911；在美国可拨打或短信联系 988。</span><span lang="en">This site does not provide crisis support. If anyone is in immediate danger, call 911; in the U.S. you can call or text 988.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CODE OF CONDUCT ============ -->
+  <section class="section bg-ink" id="conduct">
+    <div class="wrap">
+      <div class="conduct-intro">
+        <div class="reveal">
+          <span class="eyebrow"><span lang="zh-CN">志愿者行为准则</span><span lang="en">Code of conduct</span></span>
+          <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.7rem)"><span lang="zh-CN">尊重，是一切合作的起点</span><span lang="en">Respect comes first</span></h2>
+          <p class="lede mt-2"><span lang="zh-CN">我们尊重自闭症人士的自主权、隐私、沟通方式和个人边界。</span><span lang="en">We respect autistic people's autonomy, privacy, ways of communicating and personal boundaries.</span></p>
+        </div>
+        <div class="page-hero-art reveal">
+          <img src="assets/vol2.jpg" data-alt-zh="蓝橙色调插画：活动签到台前，一位志愿者微笑着迎接拄拐的孩子和长者；左侧是摆着懒人沙发的安静角，孩子们戴着降噪耳机休息。" data-alt-en="Blue-and-orange painterly illustration: at an event check-in table a smiling volunteer welcomes a child on crutches and an older man; to the left, children in noise-cancelling headphones rest in a quiet corner with beanbags." alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="conduct">
+        <div class="reveal"><span class="card-icon" data-icon="ear"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">用对方喜欢的称呼</span><span lang="en">Use their words</span></h3><p><span lang="zh-CN">使用本人偏好的称呼和表达。</span><span lang="en">Use each person's preferred name and terms.</span></p></div>
+        <div class="reveal"><span class="card-icon" data-icon="lock"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">保护他人隐私</span><span lang="en">Protect privacy</span></h3><p><span lang="zh-CN">不公开他人的诊断、照片或故事。</span><span lang="en">Never share anyone else's diagnosis, photos or story.</span></p></div>
+        <div class="reveal"><span class="card-icon" data-icon="shield"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">不作医疗承诺</span><span lang="en">No medical promises</span></h3><p><span lang="zh-CN">不承诺医疗或治疗效果。</span><span lang="en">Never promise medical or treatment outcomes.</span></p></div>
+        <div class="reveal"><span class="card-icon" data-icon="hands"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">不借社群推销</span><span lang="en">No self-promotion</span></h3><p><span lang="zh-CN">不利用社群关系推销个人服务。</span><span lang="en">Never use community relationships to sell personal services.</span></p></div>
+      </div>
+      <div class="caveat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3 2 20h20z"/><path d="M12 10v4.5M12 17.5v.01"/></svg>
+        <p style="margin:0"><span lang="zh-CN">发现不安全行为、隐私泄露、虚假宣传或利益冲突，请立即联系项目负责人或成人指导人。</span><span lang="en">Report unsafe behaviour, privacy leaks, false claims or conflicts of interest to the project lead or adult advisor right away.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPLICATION ============ -->
+  <section class="section" id="apply">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">申请成为志愿者</span><span lang="en">Apply</span></span>
+        <h2><span lang="zh-CN">你想从哪件小事开始？</span><span lang="en">Where would you like to start?</span></h2>
+        <p class="lede"><span lang="zh-CN">只问安排任务所需的信息，选填项可留空。</span><span lang="en">We only ask what we need to match you. Optional fields can stay blank.</span></p>
+      </div>
+      <div class="split wide-left">
+        <div class="form-card reveal">
+          <form class="form" id="volForm" novalidate>
+            <div class="row-2">
+              <div class="field">
+                <label for="vName"><span lang="zh-CN">姓名或希望使用的称呼</span><span lang="en">Name or what you'd like to be called</span></label>
+                <input id="vName" name="name" type="text" autocomplete="nickname" required>
+              </div>
+              <div class="field">
+                <label for="vEmail"><span lang="zh-CN">电子邮箱</span><span lang="en">Email</span></label>
+                <input id="vEmail" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="field">
+                <label for="vTz"><span lang="zh-CN">所在时区</span><span lang="en">Time zone</span></label>
+                <input id="vTz" name="timezone" type="text" data-ph-zh="例如：美国东部时间（ET）" data-ph-en="e.g. U.S. Eastern (ET)">
+              </div>
+              <div class="field">
+                <label for="vTime"><span lang="zh-CN">可参与时间</span><span lang="en">When you're available</span></label>
+                <input id="vTime" name="availability" type="text" data-ph-zh="例如：周末上午" data-ph-en="e.g. weekend mornings">
+              </div>
+            </div>
+
+            <fieldset>
+              <legend><span lang="zh-CN">感兴趣的岗位（可多选）</span><span lang="en">Roles you're interested in (choose any)</span></legend>
+              <div class="opt-grid">
+                <label class="opt"><input type="checkbox" name="roles" value="fact-check"><span><span lang="zh-CN">资料核验</span><span lang="en">Fact-checking</span></span></label>
+                <label class="opt"><input type="checkbox" name="roles" value="translation"><span><span lang="zh-CN">中英文内容</span><span lang="en">Chinese–English content</span></span></label>
+                <label class="opt"><input type="checkbox" name="roles" value="accessibility"><span><span lang="zh-CN">无障碍测试</span><span lang="en">Accessibility testing</span></span></label>
+                <label class="opt"><input type="checkbox" name="roles" value="design"><span><span lang="zh-CN">设计与影像</span><span lang="en">Design &amp; imagery</span></span></label>
+                <label class="opt"><input type="checkbox" name="roles" value="events"><span><span lang="zh-CN">活动支持</span><span lang="en">Event support</span></span></label>
+                <label class="opt"><input type="checkbox" name="roles" value="creators"><span><span lang="zh-CN">创作者支持</span><span lang="en">Creator support</span></span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="vSkills"><span lang="zh-CN">相关技能</span><span lang="en">Relevant skills</span></label>
+              <textarea id="vSkills" name="skills" data-ph-zh="例如：会中英文翻译、熟悉网页设计……" data-ph-en="e.g. Chinese–English translation, web design…"></textarea>
+            </div>
+
+            <fieldset>
+              <legend><span lang="zh-CN">你是否未满 18 岁？</span><span lang="en">Are you under 18?</span></legend>
+              <div class="opt-grid">
+                <label class="opt"><input type="radio" name="minor" value="yes" required><span><span lang="zh-CN">是，我未满 18 岁</span><span lang="en">Yes, I'm under 18</span></span></label>
+                <label class="opt"><input type="radio" name="minor" value="no"><span><span lang="zh-CN">否，我已满 18 岁</span><span lang="en">No, I'm 18 or older</span></span></label>
+              </div>
+            </fieldset>
+
+            <div class="minor-box" id="minorBox" hidden>
+              <p style="margin:0;font-size:.92rem"><span lang="zh-CN"><b>未成年申请人需要：</b>监护人同意，并确认学校对志愿服务的要求。</span><span lang="en"><b>If you're under 18:</b> we need your guardian's consent, and you should check your school's requirements for volunteering.</span></p>
+              <label class="opt"><input type="checkbox" name="guardian" id="vGuardian"><span><span lang="zh-CN">我的监护人已知晓并同意我申请成为志愿者。</span><span lang="en">My parent or guardian knows about and agrees to my application.</span></span></label>
+              <label class="opt"><input type="checkbox" name="school" id="vSchool"><span><span lang="zh-CN">我已了解并会遵守学校对校外志愿服务的相关要求。</span><span lang="en">I've checked and will follow my school's requirements for outside volunteering.</span></span></label>
+            </div>
+
+            <div class="field">
+              <label for="vNeeds"><span lang="zh-CN">无障碍或沟通支持需求</span><span lang="en">Accessibility or communication needs</span> <span class="opt-tag"><span lang="zh-CN">（选填）</span><span lang="en">(optional)</span></span></label>
+              <textarea id="vNeeds" name="needs" data-ph-zh="例如：更习惯文字沟通、需要提前收到任务说明……" data-ph-en="e.g. I prefer written communication, I'd like task instructions in advance…"></textarea>
+              <span class="hint"><span lang="zh-CN">写下对你有帮助的安排即可，无需说明原因或诊断。</span><span lang="en">Just tell us what helps — no need to explain why or share a diagnosis.</span></span>
+            </div>
+
+            <div class="note-box" style="padding:16px 18px;font-size:.9rem">
+              <span data-icon="lock"></span>
+              <p><span lang="zh-CN">请不要在此填写诊断报告、医疗记录、家庭住址、社会安全号码或与岗位无关的信息。</span><span lang="en">Please don't include diagnostic reports, medical records, your home address, Social Security number or anything unrelated to the role.</span></p>
+            </div>
+
+            <div class="form-msg" id="formError" role="alert" hidden>
+              <p style="margin:0;color:var(--terra);font-weight:600;font-size:.92rem"><span lang="zh-CN">请填写称呼、有效邮箱，并回答是否未满 18 岁；未成年申请人还需勾选两项确认。</span><span lang="en">Please add your name, a valid email and whether you're under 18. Applicants under 18 also need to tick both confirmations.</span></p>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-terra" type="submit"><span lang="zh-CN">提交申请</span><span lang="en">Send application</span></button>
+            </div>
+
+            <div class="form-msg" id="formMsg" role="status" aria-live="polite" hidden>
+              <div class="note-box terra">
+                <span data-icon="info"></span>
+                <div>
+                  <p><span lang="zh-CN"><b>谢谢你的关注！</b>表单提交功能即将开放，本次填写的内容不会被发送或保存。请通过<a href="about.html#contact">「关于项目」页面</a>的联系方式与我们联系。</span><span lang="en"><b>Thanks for your interest!</b> Online submissions are opening soon — what you entered here has not been sent or saved. Please reach us via the contact details on the <a href="about.html#contact">About page</a>.</span></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="reveal sticky-col" style="display:grid;gap:18px">
+          <div class="side-card">
+            <h3><span lang="zh-CN">我们如何使用你的信息</span><span lang="en">How we use your information</span></h3>
+            <p><span lang="zh-CN">我们只收集完成任务所需的信息，不要求提供诊断报告、学校文件或医疗记录，也不出售个人信息。</span><span lang="en">We collect only what a task needs, never ask for diagnostic reports, school documents or medical records, and never sell personal information.</span></p>
+            <p style="margin:0"><span lang="zh-CN">如需了解信息保存期限、服务提供商，或希望删除你的信息，请通过<a href="about.html#contact">「关于项目」页面</a>与我们联系。</span><span lang="en">To ask about how long we keep information, which service providers we use, or to have your data deleted, contact us via the <a href="about.html#contact">About page</a>.</span></p>
+          </div>
+          <div class="side-card">
+            <h3><span lang="zh-CN">关于未成年人</span><span lang="en">About minors</span></h3>
+            <p style="margin:0"><span lang="zh-CN">在年龄核验和家长同意流程完成前，本站不收集13岁以下儿童的姓名、邮箱、电话、照片、声音、位置、持久标识符或其他受保护的个人信息。</span><span lang="en">Until an age-check and parental-consent process is in place, the site does not collect names, emails, phone numbers, photos, voice, location, persistent identifiers or other protected personal information from children under 13.</span></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <h2><span lang="zh-CN">还没想好？先读一读</span><span lang="en">Not sure yet? Start by reading</span></h2>
+          <p><span lang="zh-CN">了解自闭症，或看看项目如何运作。</span><span lang="en">Learn about autism or see how the project works.</span></p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn" href="knowledge.html"><span lang="zh-CN">了解自闭症</span><span lang="en">Understand autism</span></a>
+          <a class="btn btn-ghost" href="about.html"><span lang="zh-CN">关于项目</span><span lang="en">About the project</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/site.js"></script>
+<script>
+(function () {
+  var form = document.getElementById("volForm");
+  if (!form) return;
+  var box = document.getElementById("minorBox");
+  var g = document.getElementById("vGuardian"), s = document.getElementById("vSchool");
+  var msg = document.getElementById("formMsg"), err = document.getElementById("formError");
+
+  function syncMinor() {
+    var minor = form.querySelector('input[name="minor"]:checked');
+    var on = !!minor && minor.value === "yes";
+    box.hidden = !on;
+    g.required = on; s.required = on;
+  }
+  form.querySelectorAll('input[name="minor"]').forEach(function (r) { r.addEventListener("change", syncMinor); });
+  syncMinor();
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    msg.hidden = true;
+    if (!form.checkValidity()) {
+      err.hidden = false;
+      var bad = form.querySelector(":invalid");
+      if (bad) bad.focus();
+      return;
+    }
+    err.hidden = true;
+    msg.hidden = false;
+    msg.scrollIntoView({ block: "nearest" });
+  });
+})();
+</script>
+</body>
+</html>

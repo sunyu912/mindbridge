@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于项目 · MindBridge</title>
+<meta name="mb-title-zh" content="关于项目 · MindBridge">
+<meta name="mb-title-en" content="About the project · MindBridge">
+<meta name="description" content="关于 MindBridge：发起人介绍、项目使命、工作方式、常见问题、安全与隐私说明，以及资料来源与更新规则。About MindBridge: founder, mission, how we work, FAQ, safety and privacy, sources and update rules.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23223a5e'/%3E%3Cpath d='M7 27c4.2-8.5 8.6-12.7 13-12.7S28.8 18.5 33 27' fill='none' stroke='%23f2b089' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>(function(){var d=document.documentElement;try{var q=new URLSearchParams(location.search).get("lang"),s=localStorage.getItem("mb-lang");d.dataset.lang=q||s||"zh";d.lang=d.dataset.lang==="en"?"en":"zh-CN";d.dataset.size=localStorage.getItem("mb-size")||"m";d.dataset.calm=localStorage.getItem("mb-calm")||"off";var t=localStorage.getItem("mb-theme");if(t&&t!=="auto")d.dataset.theme=t;}catch(e){d.dataset.lang="zh";}})();</script>
+<style>
+  .subnav { position: sticky; top: 72px; z-index: 40; background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0; }
+  .subnav .pill-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .subnav .pill-nav a { white-space: nowrap; }
+  .subnav .pill-nav a[aria-current] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  main section[id] { scroll-margin-top: 150px; }
+  .letter { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(32px, 5vw, 60px); box-shadow: var(--shadow); }
+  .letter::before { content: "\201C"; position: absolute; top: 6px; left: 22px; font: 600 6.5rem/1 var(--serif-en); color: var(--terra); opacity: .28; }
+  .letter p { font-family: var(--display); font-size: 1.14em; line-height: 1.85; color: var(--ink); }
+  .letter .sig { margin-top: 28px; padding-top: 22px; border-top: 1px dashed var(--line); display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; font-size: .92rem; color: var(--ink-3); }
+  .mission-statement { font-family: var(--display); font-size: clamp(1.35rem, 2.5vw, 1.95rem); line-height: 1.6; color: #fff; max-width: 30em; margin: 0; }
+  .contact-list { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; }
+  .contact-list li { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: .95em; }
+  .contact-list li:last-child { border-bottom: 0; }
+  .hotlines { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; }
+  .hotline { background: var(--card); border-radius: 14px; padding: 16px 18px; }
+  .hotline b { display: block; font: 600 2.2rem/1 var(--serif-en); color: var(--terra); }
+  .hotline span { font-size: .86rem; color: var(--ink-2); }
+  .cite { border-left: 4px solid var(--indigo); background: var(--card); border-radius: 0 var(--radius) var(--radius) 0; padding: 22px 26px; font-size: .95em; }
+  .cite dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; margin: 0; }
+  .cite dt { color: var(--ink-3); font-size: .86em; }
+  .cite dd { margin: 0; font-weight: 500; }
+  td a { color: var(--indigo); text-underline-offset: 3px; word-break: break-word; }
+  .chip svg { width: 14px; height: 14px; }
+  @media (max-width: 600px) { .hotlines { grid-template-columns: 1fr; } .cite dl { grid-template-columns: 1fr; } .cite dd { margin-bottom: 8px; } }
+</style>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-grid">
+      <div class="reveal">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html"><span lang="zh-CN">首页</span><span lang="en">Home</span></a><span aria-hidden="true">/</span><span><span lang="zh-CN">关于项目</span><span lang="en">About</span></span></nav>
+        <h1><span lang="zh-CN">一个由学生发起、边界清楚的社群项目</span><span lang="en">A student-led community project with clear boundaries</span></h1>
+        <p class="lede"><span lang="zh-CN">基于可信公共资料的科普与资源导航，关注自闭症人士在教育、社区和就业中的真实需要。</span><span lang="en">Plain-language information and resource navigation, built on trusted public sources, for autistic people's real needs at school, in the community and at work.</span></p>
+        <p class="muted" style="max-width:38em"><span lang="zh-CN">我们不提供医疗诊断、治疗方案或紧急服务。</span><span lang="en">We don't provide medical diagnosis, treatment plans or emergency services.</span></p>
+        <div class="btn-row mt-2">
+          <a class="btn btn-terra" href="#faq"><span lang="zh-CN">常见问题</span><span lang="en">Read the FAQ</span></a>
+          <a class="btn btn-ghost" href="#contact"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span></a>
+        </div>
+      </div>
+      <div class="page-hero-art reveal"><img src="assets/about.jpg" data-alt-zh="蓝橙色插画：一位少女和一位成人导师在窗边的书桌前用笔记本电脑一起工作，身后的软木板上贴满了相互连线的资料卡片。" data-alt-en="Blue and orange illustration: a teenage girl and an adult mentor work together at a laptop by a window, with a corkboard of linked research notes behind them." alt=""></div>
+    </div>
+  </section>
+
+  <!-- ============ IN-PAGE NAV ============ -->
+  <div class="subnav">
+    <nav class="wrap pill-nav" aria-label="On this page">
+      <a href="#founder"><span lang="zh-CN">发起人的话</span><span lang="en">From the founder</span></a>
+      <a href="#mission"><span lang="zh-CN">使命与工作方式</span><span lang="en">Mission &amp; approach</span></a>
+      <a href="#faq"><span lang="zh-CN">常见问题</span><span lang="en">FAQ</span></a>
+      <a href="#safety"><span lang="zh-CN">安全与隐私</span><span lang="en">Safety &amp; privacy</span></a>
+      <a href="#sources"><span lang="zh-CN">资料来源与更新</span><span lang="en">Sources &amp; updates</span></a>
+      <a href="#contact"><span lang="zh-CN">联系</span><span lang="en">Contact</span></a>
+    </nav>
+  </div>
+
+  <!-- ============ FOUNDER ============ -->
+  <section class="section" id="founder">
+    <div class="wrap split" style="grid-template-columns:.8fr 1.2fr;align-items:center">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">发起人介绍</span><span lang="en">Meet the founder</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">用自己能做到的方式，搭一座桥</span><span lang="en">Building a bridge, one doable step at a time</span></h2>
+        <div class="btn-row mt-2">
+          <span class="chip"><span data-icon="school"></span><span lang="zh-CN">美国高中生发起</span><span lang="en">Started by a U.S. high-schooler</span></span>
+          <span class="chip sage"><span data-icon="shield"></span><span lang="zh-CN">成人指导人审核</span><span lang="en">Adult-advisor reviewed</span></span>
+        </div>
+      </div>
+      <figure class="letter reveal" style="margin:0">
+        <blockquote style="margin:0">
+          <p lang="zh-CN">我是一名在美国就读的高中生。我希望为自闭症社群建立一个容易理解、可以参与、来源清楚的平台。</p>
+          <p lang="en">I'm a high-school student in the U.S. I wanted to build something for the autism community that's easy to understand, easy to join, and always clear about its sources.</p>
+          <p lang="zh-CN" style="margin-bottom:0">因为我是学生，涉及医疗、法律、儿童安全、资金和商品交易的事项，都由成人指导人或合格合作方审核。</p>
+          <p lang="en" style="margin-bottom:0">Because I'm a student, anything involving medical or legal matters, child safety, money or sales is reviewed by an adult advisor or a qualified partner.</p>
+        </blockquote>
+        <figcaption class="sig">
+          <span lang="zh-CN">— MindBridge 发起人</span><span lang="en">— MindBridge founder</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ MISSION ============ -->
+  <section class="section bg-ink" id="mission">
+    <div class="wrap">
+      <div class="section-head reveal" style="max-width:none">
+        <span class="eyebrow"><span lang="zh-CN">项目使命</span><span lang="en">Our mission</span></span>
+        <p class="mission-statement"><span lang="zh-CN">支持自闭症人士更平等地参与学校、社区和工作，并尊重他们对称呼、沟通方式和支持目标的选择。</span><span lang="en">Helping autistic people take part more equally in school, community and work — while respecting their own choices about language, communication and support.</span></p>
+      </div>
+      <div class="grid grid-4 reveal">
+        <div><span class="card-icon" style="background:rgba(255,255,255,.08);color:#f2b089" data-icon="book"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">可信科普</span><span lang="en">Trustworthy information</span></h3></div>
+        <div><span class="card-icon" style="background:rgba(255,255,255,.08);color:#f2b089" data-icon="hands"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">具体志愿任务</span><span lang="en">Concrete volunteer tasks</span></h3></div>
+        <div><span class="card-icon" style="background:rgba(255,255,255,.08);color:#f2b089" data-icon="compass"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">资源导航</span><span lang="en">Resource navigation</span></h3></div>
+        <div><span class="card-icon" style="background:rgba(255,255,255,.08);color:#f2b089" data-icon="store"></span><h3 style="font-size:1.1rem"><span lang="zh-CN">透明商品展示</span><span lang="en">A transparent shop</span></h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE WORK / WHAT WE DON'T DO ============ -->
+  <section class="section">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">我们的工作方式</span><span lang="en">How we work</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.7rem,3.2vw,2.3rem)"><span lang="zh-CN">五条我们自己遵守的规则</span><span lang="en">Five rules we hold ourselves to</span></h2>
+        <div class="steps mt-2">
+          <div class="step"><div><h4><span lang="zh-CN">引用原始资料</span><span lang="en">Cite original sources</span></h4><p><span lang="zh-CN">引用官方和可信原始资料，保留链接与更新日期。</span><span lang="en">Official and trusted sources, with link and update date.</span></p></div></div>
+          <div class="step"><div><h4><span lang="zh-CN">邀请本人参与</span><span lang="en">Ask the people it's about</span></h4><p><span lang="zh-CN">请自闭症人士和家庭审阅与其生活相关的内容。</span><span lang="en">Autistic people and families review content about their lives.</span></p></div></div>
+          <div class="step"><div><h4><span lang="zh-CN">先取得授权</span><span lang="en">Get consent first</span></h4><p><span lang="zh-CN">发布个人故事、照片或作品前取得明确授权。</span><span lang="en">Clear permission before publishing any story, photo or work.</span></p></div></div>
+          <div class="step"><div><h4><span lang="zh-CN">公开资金流向</span><span lang="en">Show where money goes</span></h4><p><span lang="zh-CN">公开销售方、合作关系、公益金额和支出。</span><span lang="en">Sellers, partnerships, charitable amounts and spending disclosed.</span></p></div></div>
+          <div class="step"><div><h4><span lang="zh-CN">及时更正</span><span lang="en">Fix mistakes openly</span></h4><p><span lang="zh-CN">及时修正错误，并记录重要修改。</span><span lang="en">Errors corrected promptly; significant changes logged.</span></p></div></div>
+        </div>
+      </div>
+      <div class="reveal" style="display:grid;gap:24px">
+        <div class="page-hero-art" style="aspect-ratio:1/1"><img src="assets/about2.jpg" loading="lazy" data-alt-zh="蓝橙色插画：几位不同年龄的青少年和一位长者围坐在桌边，一起讨论风车草图和便利贴，其中一位坐着轮椅。" data-alt-en="Blue and orange illustration: teenagers of different backgrounds, one using a wheelchair, and an older volunteer gather around a table sharing wind-turbine sketches and sticky notes." alt=""></div>
+        <div class="card" style="background:var(--terra-soft);border-color:transparent;padding:clamp(28px,4vw,44px)">
+          <span class="eyebrow"><span lang="zh-CN">项目不提供的服务</span><span lang="en">What we don't do</span></span>
+          <h3 class="mt-1" style="font-size:1.45rem"><span lang="zh-CN">本项目不是诊所、治疗中心、学校、法律服务机构或紧急援助机构。</span><span lang="en">We are not a clinic, a treatment centre, a school, a legal service or an emergency service.</span></h3>
+          <ul class="checks crosses mt-2">
+            <li><span><span lang="zh-CN">我们不诊断自闭症。</span><span lang="en">We don't diagnose autism.</span></span></li>
+            <li><span><span lang="zh-CN">不制定个人治疗或教育方案。</span><span lang="en">We don't create individual treatment or education plans.</span></span></li>
+            <li><span><span lang="zh-CN">不保证商品、岗位或外部机构的结果。</span><span lang="en">We don't guarantee outcomes from products, jobs or outside organisations.</span></span></li>
+            <li><span><span lang="zh-CN">不接受志愿者以本站名义提供私人咨询。</span><span lang="en">We don't allow volunteers to offer private counselling or advice in MindBridge's name.</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section bg-2" id="faq">
+    <div class="wrap split" style="grid-template-columns:.75fr 1.25fr">
+      <div class="reveal sticky-col">
+        <span class="eyebrow"><span lang="zh-CN">常见问题</span><span lang="en">FAQ</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">常见问题</span><span lang="en">Common questions</span></h2>
+        <p class="muted mt-2"><span lang="zh-CN">没找到答案？请联系我们。</span><span lang="en">Not answered here? Contact us.</span></p>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary><span lang="zh-CN">这个网站提供自闭症诊断吗？</span><span lang="en">Does this site diagnose autism?</span></summary>
+          <div class="ans"><p lang="zh-CN">不提供。诊断和个人医疗建议应由合格的医疗专业人员提供。</p><p lang="en">No. Diagnosis and personal medical advice should come from a qualified healthcare professional.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">网站上的数据来自哪里？</span><span lang="en">Where do the numbers on this site come from?</span></summary>
+          <div class="ans"><p lang="zh-CN">每条数据注明来源、范围和年份，优先引用CDC、NIH、WHO、美国教育部和劳工部等官方页面，并定期复查。</p><p lang="en">Each statistic lists its source, population and year. We cite official pages first (CDC, NIH, WHO, U.S. Departments of Education and Labor) and re-check them regularly.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">谁可以成为志愿者？</span><span lang="en">Who can volunteer?</span></summary>
+          <div class="ans"><p lang="zh-CN">任何社区成员都可以申请。每项任务会说明年龄、技能、时间和成人监督要求。</p><p lang="en">Anyone in the community can apply. Each task lists its age, skill, time and adult-supervision requirements.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">志愿者可以提供心理咨询吗？</span><span lang="en">Can volunteers provide counselling?</span></summary>
+          <div class="ans"><p lang="zh-CN">不可以。除非由有执照的独立机构正式提供并承担责任，志愿者不得诊断、治疗或开展私人咨询。</p><p lang="en">No. Unless formally provided by an independent, licensed organisation that takes responsibility, volunteers may not diagnose, treat or counsel.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">购买商品等于捐款吗？</span><span lang="en">Is buying something the same as donating?</span></summary>
+          <div class="ans"><p lang="zh-CN">不一定。商品页面会说明销售方和资金分配；只有符合规则并明确说明时，才可能属于可抵税捐款。</p><p lang="en">Not necessarily. Product pages show the seller and how money is shared; a payment is tax-deductible only when the rules are met and this is stated clearly.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">如何知道公益金额去了哪里？</span><span lang="en">How do I know where the charitable money goes?</span></summary>
+          <div class="ans"><p lang="zh-CN">相关商品标明金额或比例及受益方。我们发布汇总记录，不公开顾客或创作者的私人信息。</p><p lang="en">Products show the amount or percentage and who benefits. We publish summary records without anyone's private information.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">可以提交个人故事或照片吗？</span><span lang="en">Can I share a personal story or photo?</span></summary>
+          <div class="ans"><p lang="zh-CN">可以申请。发布前须确认本人意愿、使用范围和撤回方式；未成年人内容需监护人同意，并尽量减少可识别信息。</p><p lang="en">Yes, you can ask. We first confirm consent, how it's used and how to withdraw it. Content about minors needs guardian consent and minimal identifying details.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">网站如何称呼自闭症群体？</span><span lang="en">What language does the site use to describe autistic people?</span></summary>
+          <div class="ans"><p lang="zh-CN">人们偏好的称呼不同。我们尊重当事人的选择，不强加统一称呼。</p><p lang="en">People prefer different terms (“autistic person”, “person with autism”…). We respect each person's choice.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">网站上的外部链接代表推荐吗？</span><span lang="en">Does an external link mean you recommend it?</span></summary>
+          <div class="ans"><p lang="zh-CN">不代表。请自行核验机构、费用、资质和隐私规则。</p><p lang="en">No. Please check the organisation, costs, qualifications and privacy rules yourself.</p></div>
+        </details>
+        <details>
+          <summary><span lang="zh-CN">发现错误或不安全内容怎么办？</span><span lang="en">What if I find a mistake or something unsafe?</span></summary>
+          <div class="ans"><p lang="zh-CN">请附页面地址发送至纠错或安全邮箱。涉及紧急危险时，请联系当地紧急服务。</p><p lang="en">Email our corrections or safety address with the page link. If someone is in immediate danger, contact local emergency services.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SAFETY & PRIVACY ============ -->
+  <section class="section" id="safety">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">全站安全与隐私</span><span lang="en">Safety &amp; privacy</span></span>
+        <h2><span lang="zh-CN">我们能做什么、不能做什么，都写在这里</span><span lang="en">What we can and can't do — all in one place</span></h2>
+        <p class="lede"><span lang="zh-CN">适用于全站。正式隐私政策将经熟悉相关法律的成人复核后发布。</span><span lang="en">These apply site-wide. A full privacy policy will follow after review by an adult familiar with the law.</span></p>
+      </div>
+
+      <div class="split reveal" style="align-items:stretch">
+        <div class="card" style="padding:clamp(28px,4vw,40px)">
+          <span class="card-icon" data-icon="info"></span>
+          <h3><span lang="zh-CN">医疗免责声明</span><span lang="en">Medical disclaimer</span></h3>
+          <p><span lang="zh-CN">本站内容仅用于一般科普和资源导航，不构成医疗诊断、治疗、心理咨询或专业意见。请咨询合格的医疗、教育、法律或社会服务专业人员，不要因本站内容推迟或停止已有的专业支持。</span><span lang="en">Everything here is general information and resource navigation — not medical diagnosis, treatment, counselling or professional advice. Consult qualified medical, education, legal or social-service professionals, and never delay or stop professional support you already receive because of this site.</span></p>
+        </div>
+        <div class="card" style="padding:clamp(28px,4vw,40px);background:var(--terra-soft);border-color:transparent">
+          <span class="card-icon terra" style="background:var(--card)" data-icon="phone"></span>
+          <h3><span lang="zh-CN">美国危机帮助提示</span><span lang="en">Crisis help in the U.S.</span></h3>
+          <div class="hotlines">
+            <div class="hotline"><b>911</b><span><span lang="zh-CN">立即危险</span><span lang="en">Immediate danger</span></span></div>
+            <div class="hotline"><b>988</b><span><span lang="zh-CN">拨打或短信 · 自杀或严重情绪危机</span><span lang="en">Call or text · suicidal thoughts or severe emotional crisis</span></span></div>
+          </div>
+          <p><span lang="zh-CN">本站不提供危机干预。立即危险请拨打911；在美国，自杀或严重情绪危机可拨打或短信联系988 Suicide and Crisis Lifeline。其他地区请联系当地紧急服务或危机热线。</span><span lang="en">This site does not provide crisis support. For immediate danger, call 911. In the U.S., call or text the 988 Suicide and Crisis Lifeline for suicidal thoughts or severe emotional crisis. Elsewhere, contact local emergency services or a crisis line.</span></p>
+          <a class="link-arrow" href="https://988lifeline.org">988lifeline.org</a>
+        </div>
+      </div>
+
+      <div class="grid grid-3 mt-2">
+        <div class="card reveal">
+          <span class="card-icon sage" data-icon="lock"></span>
+          <h3><span lang="zh-CN">简明隐私说明</span><span lang="en">Privacy in brief</span></h3>
+          <p><span lang="zh-CN">我们只收集完成明确任务所需的信息（如回复邮箱、志愿申请或订单信息），不要求公开诊断报告、学校文件或医疗记录，也不出售个人信息。</span><span lang="en">We collect only what a specific task needs (e.g. a reply email, volunteer application or order details). We never ask you to share diagnostic, school or medical records publicly, and never sell personal information.</span></p>
+          <p><span lang="zh-CN">每个收集信息的页面都会说明收集内容、用途、保存期限、服务商、删除方式和联系人；正式政策还将涵盖Cookie、分析、支付、邮件工具和第三方链接。</span><span lang="en">Each form states what's collected, why, how long it's kept, which providers are involved, how to delete it and whom to contact. The full policy will also cover cookies, analytics, payments, email tools and third-party links.</span></p>
+        </div>
+        <div class="card reveal">
+          <span class="card-icon" data-icon="shield"></span>
+          <h3><span lang="zh-CN">未成年人信息说明</span><span lang="en">Children's information</span></h3>
+          <p><span lang="zh-CN">在完成年龄和家长同意流程前，本站不收集13岁以下儿童的姓名、邮箱、电话、照片、声音、位置、持久标识符或其他受保护的个人信息。</span><span lang="en">Until an age check and parental-consent process is in place, we don't collect names, emails, phone numbers, photos, voice, location, persistent identifiers or other protected personal information from children under 13.</span></p>
+          <p><span lang="zh-CN">面向13岁以下儿童或知情收集其信息的网站，可能须遵守美国Children's Online Privacy Protection Act及FTC的COPPA规则，适用要求由成人和合格法律顾问确定。</span><span lang="en">Sites aimed at under-13s, or that knowingly collect their data, may need to comply with the U.S. Children's Online Privacy Protection Act and the FTC's COPPA Rule; adults and qualified legal counsel decide what applies.</span></p>
+          <a class="link-arrow" href="https://www.ftc.gov/business-guidance/resources/childrens-online-privacy-protection-rule-six-step-compliance-plan-your-business"><span lang="zh-CN">FTC COPPA 合规六步指引</span><span lang="en">FTC COPPA six-step plan</span></a>
+        </div>
+        <div class="card reveal">
+          <span class="card-icon terra" data-icon="users"></span>
+          <h3><span lang="zh-CN">社区发布规则</span><span lang="en">Community rules</span></h3>
+          <p><span lang="zh-CN">请尊重他人的身份、沟通方式和边界。不要发布诊断文件、住址、学校日程、私人联系方式或未经许可的照片。不要提供医疗诊断、宣传未经证实的疗法、攻击他人或利用社群成员进行推销。</span><span lang="en">Please respect other people's identities, ways of communicating and boundaries. Don't post diagnostic documents, home addresses, school schedules, private contact details or photos without permission. Don't offer medical diagnoses, promote unproven therapies, attack others or use community members as sales targets.</span></p>
+          <p><span lang="zh-CN">违规或可能造成伤害的内容会被删除；涉及儿童安全或违法风险的交由成人负责人处理。</span><span lang="en">Content that breaks these rules or could cause harm may be removed; child-safety or legal issues go to a responsible adult.</span></p>
+        </div>
+      </div>
+
+      <div class="note-box mt-2 reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+        <div>
+          <p style="font-weight:700;margin-bottom:6px"><span lang="zh-CN">资料引用与机构背书说明</span><span lang="en">Citations are not endorsements</span></p>
+          <p><span lang="zh-CN">引用或链接不表示CDC、NIH、WHO、美国政府、联合国或其他机构认可、赞助或推荐本项目、商品或合作伙伴。未经授权不使用任何机构标志；图片、图表、视频和个人故事发布前均核查版权与授权。</span><span lang="en">A citation or link does not mean the CDC, NIH, WHO, the U.S. government, the UN or any other organisation approves of, sponsors or recommends this project, its products or partners. No organisation's logo is used without permission, and images, charts, videos and stories are checked for copyright and consent before publishing.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCESSIBILITY ============ -->
+  <section class="section bg-2" style="padding-top:clamp(56px,7vw,96px)">
+    <div class="wrap split wide-left" style="align-items:center">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">网站无障碍要求</span><span lang="en">Accessibility commitments</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.7rem,3.2vw,2.3rem)"><span lang="zh-CN">每个页面都按这七条来检查</span><span lang="en">Every page is checked against these seven points</span></h2>
+        <ul class="checks mt-2">
+          <li><span><span lang="zh-CN">保持页面结构和导航一致，标题说明页面目的。</span><span lang="en">Keep page structure and navigation consistent, with headings that say what each page is for.</span></span></li>
+          <li><span><span lang="zh-CN">使用清楚、具体、容易理解的语言，并解释缩写。</span><span lang="en">Use clear, concrete, easy-to-understand language, and explain abbreviations.</span></span></li>
+          <li><span><span lang="zh-CN">不自动播放音乐、视频或快速动画，避免闪烁内容。</span><span lang="en">No autoplaying music, video or fast animation, and nothing that flashes.</span></span></li>
+          <li><span><span lang="zh-CN">为图片提供替代文字，为视频提供字幕或文字稿。</span><span lang="en">Give images alt text, and give videos captions or transcripts.</span></span></li>
+          <li><span><span lang="zh-CN">确保键盘可以完成导航、表单和结账操作。</span><span lang="en">Make sure navigation, forms and checkout all work with a keyboard.</span></span></li>
+          <li><span><span lang="zh-CN">表单一步一项，错误提示说明如何修正，不设置过短超时。</span><span lang="en">One thing per step in forms, error messages that explain how to fix them, and no short time-outs.</span></span></li>
+          <li><span><span lang="zh-CN">提供足够的文字和背景对比度，不只依靠颜色表达信息。</span><span lang="en">Provide enough contrast between text and background, and never rely on colour alone to convey meaning.</span></span></li>
+        </ul>
+      </div>
+      <div class="card reveal" style="padding:clamp(28px,4vw,40px)">
+        <span class="card-icon sage" data-icon="a11y"></span>
+        <h3><span lang="zh-CN">按你的方式阅读</span><span lang="en">Read your way</span></h3>
+        <p><span lang="zh-CN">右上角的无障碍按钮可调整字号、开启平静模式或切换深色界面。</span><span lang="en">Use the accessibility button (top right) for text size, calm mode or dark theme.</span></p>
+        <a class="link-arrow" href="https://www.w3.org/WAI/cognitive/"><span lang="zh-CN">资料来源：W3C 认知和学习无障碍</span><span lang="en">Source: W3C Cognitive Accessibility</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="sources">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">资料来源与更新规则</span><span lang="en">Sources &amp; update rules</span></span>
+        <h2><span lang="zh-CN">我们从哪里找资料，又怎样保持更新</span><span lang="en">Where our information comes from — and how we keep it current</span></h2>
+        <p class="lede"><span lang="zh-CN">优先链接原始机构，并标明核验日期。</span><span lang="en">We link to the original organisation and note when we last checked.</span></p>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <caption class="sr-only"><span lang="zh-CN">核心公开来源</span><span lang="en">Core public sources</span></caption>
+          <thead>
+            <tr><th scope="col"><span lang="zh-CN">来源</span><span lang="en">Source</span></th><th scope="col"><span lang="zh-CN">建议用途</span><span lang="en">What we use it for</span></th><th scope="col"><span lang="zh-CN">原始链接</span><span lang="en">Original link</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span lang="zh-CN">CDC 自闭症数据</span><span lang="en">CDC autism data</span></td><td><span lang="zh-CN">美国 ADDM 监测数据；1 比 31 数据的原始页面</span><span lang="en">U.S. ADDM monitoring data; the original page for the 1-in-31 figure</span></td><td><a href="https://www.cdc.gov/autism/data-research/index.html">cdc.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">NIMH 自闭症资料</span><span lang="en">NIMH on autism</span></td><td><span lang="zh-CN">定义、评估、服务与支持</span><span lang="en">Definitions, evaluation, services and support</span></td><td><a href="https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd">nimh.nih.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">WHO 自闭症资料</span><span lang="en">WHO autism fact sheet</span></td><td><span lang="zh-CN">全球估计、个体差异与社会支持</span><span lang="en">Global estimates, individual differences and social support</span></td><td><a href="https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders">who.int</a></td></tr>
+            <tr><td><span lang="zh-CN">联合国自闭症关注日</span><span lang="en">UN World Autism Awareness Day</span></td><td><span lang="zh-CN">4 月 2 日和包容倡议</span><span lang="en">2 April and the push for inclusion</span></td><td><a href="https://www.un.org/en/observances/autism-day">un.org</a></td></tr>
+            <tr><td><span lang="zh-CN">美国教育部 IDEA 家长资源</span><span lang="en">U.S. Dept. of Education — IDEA</span></td><td><span lang="zh-CN">教育权利和家庭资源</span><span lang="en">Education rights and family resources</span></td><td><a href="https://sites.ed.gov/idea/">sites.ed.gov/idea</a></td></tr>
+            <tr><td><span lang="zh-CN">美国教育部家长信息中心</span><span lang="en">Parent Training &amp; Information Centers</span></td><td><span lang="zh-CN">查找各州支持中心</span><span lang="en">Finding your state's support center</span></td><td><a href="https://www.parentcenterhub.org/find-your-center/">parentcenterhub.org</a></td></tr>
+            <tr><td><span lang="zh-CN">美国劳工部自闭症就业资源</span><span lang="en">U.S. Dept. of Labor (ODEP)</span></td><td><span lang="zh-CN">招聘、合理便利和就业支持</span><span lang="en">Hiring, workplace accommodations and employment support</span></td><td><a href="https://www.dol.gov/agencies/odep">dol.gov/agencies/odep</a></td></tr>
+            <tr><td><span lang="zh-CN">W3C 认知无障碍</span><span lang="en">W3C Cognitive Accessibility</span></td><td><span lang="zh-CN">网站内容和交互设计</span><span lang="en">Website content and interaction design</span></td><td><a href="https://www.w3.org/WAI/cognitive/">w3.org/WAI</a></td></tr>
+            <tr><td><span lang="zh-CN">FTC 儿童隐私指引</span><span lang="en">FTC children's privacy guidance</span></td><td><span lang="zh-CN">COPPA 适用判断和合规步骤</span><span lang="en">Whether COPPA applies, and steps to comply</span></td><td><a href="https://www.ftc.gov/business-guidance/resources/childrens-online-privacy-protection-rule-six-step-compliance-plan-your-business">ftc.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">FDA 自闭症虚假疗法警示</span><span lang="en">FDA warnings on false autism treatments</span></td><td><span lang="zh-CN">不可靠治疗产品和健康宣传</span><span lang="en">Unreliable treatment products and health claims</span></td><td><a href="https://www.fda.gov/consumers/health-fraud-scams">fda.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">FTC 健康宣传</span><span lang="en">FTC health-claims guidance</span></td><td><span lang="zh-CN">商品健康功效证据要求</span><span lang="en">Evidence needed for product health claims</span></td><td><a href="https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance">ftc.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">IRS 免税组织查询</span><span lang="en">IRS Tax Exempt Organization Search</span></td><td><span lang="zh-CN">核验组织是否可接收可抵税捐款</span><span lang="en">Checking whether an organisation can receive tax-deductible donations</span></td><td><a href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search">irs.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">CDC 材料使用规则</span><span lang="en">CDC use of agency materials</span></td><td><span lang="zh-CN">文字、图片和标志的使用条件</span><span lang="en">Conditions for using text, images and logos</span></td><td><a href="https://www.cdc.gov/other/agencymaterials.html">cdc.gov</a></td></tr>
+            <tr><td><span lang="zh-CN">988 Suicide and Crisis Lifeline</span><span lang="en">988 Suicide and Crisis Lifeline</span></td><td><span lang="zh-CN">美国危机支持</span><span lang="en">Crisis support in the U.S.</span></td><td><a href="https://988lifeline.org">988lifeline.org</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted mt-1" style="font-size:.86rem"><span lang="zh-CN">本表最近核验日期：2026年9月</span><span lang="en">Table last verified: September 2026</span></p>
+
+      <div class="split mt-4">
+        <div class="reveal">
+          <h3 style="font-size:1.5rem"><span lang="zh-CN">资料更新流程</span><span lang="en">How we update information</span></h3>
+          <div class="steps mt-2">
+            <div class="step"><div><h4><span lang="zh-CN">找原始页面</span><span lang="en">Go to the original</span></h4><p><span lang="zh-CN">政府、公共卫生、教育或研究机构的原始页面。</span><span lang="en">The original government, health, education or research page.</span></p></div></div>
+            <div class="step"><div><h4><span lang="zh-CN">完整记录</span><span lang="en">Record the details</span></h4><p><span lang="zh-CN">标题、机构、地址、数据年份和核验日期。</span><span lang="en">Title, publisher, URL, data year and check date.</span></p></div></div>
+            <div class="step"><div><h4><span lang="zh-CN">用自己的话改写</span><span lang="en">Rewrite in our own words</span></h4><p><span lang="zh-CN">保留人群、时间范围和不确定性。</span><span lang="en">Keeping population, time frame and uncertainty intact.</span></p></div></div>
+            <div class="step"><div><h4><span lang="zh-CN">事实与观点分开</span><span lang="en">Separate fact from opinion</span></h4><p><span lang="zh-CN">个人经历须取得发布授权。</span><span lang="en">Personal experiences need permission to publish.</span></p></div></div>
+            <div class="step"><div><h4><span lang="zh-CN">定期复查</span><span lang="en">Check regularly</span></h4><p><span lang="zh-CN">核心数据、链接和政策页面至少每六个月复查。</span><span lang="en">Core stats, links and policy pages at least every six months.</span></p></div></div>
+            <div class="step"><div><h4><span lang="zh-CN">记录更新</span><span lang="en">Log every update</span></h4><p><span lang="zh-CN">注明更新日期，不保留过期数字作宣传。</span><span lang="en">Note the date; never keep outdated numbers for promotion.</span></p></div></div>
+          </div>
+        </div>
+        <div class="reveal sticky-col">
+          <h3 style="font-size:1.5rem"><span lang="zh-CN">标准来源标注格式</span><span lang="en">How we cite a source</span></h3>
+          <p class="muted mt-1"><span lang="zh-CN">我们按以下格式标注：</span><span lang="en">We cite sources in this format:</span></p>
+          <div class="cite">
+            <dl>
+              <dt><span lang="zh-CN">资料来源</span><span lang="en">Source</span></dt><dd><span lang="zh-CN">美国疾病控制与预防中心</span><span lang="en">U.S. Centers for Disease Control and Prevention</span></dd>
+              <dt><span lang="zh-CN">页面标题</span><span lang="en">Page title</span></dt><dd>Data and Statistics on Autism Spectrum Disorder</dd>
+              <dt><span lang="zh-CN">数据年份</span><span lang="en">Data year</span></dt><dd>2022</dd>
+              <dt><span lang="zh-CN">最近核验日期</span><span lang="en">Last verified</span></dt><dd><span lang="zh-CN">2026年9月10日</span><span lang="en">10 September 2026</span></dd>
+              <dt><span lang="zh-CN">原始链接</span><span lang="en">Original link</span></dt><dd><span lang="zh-CN">见页面</span><span lang="en">On the page</span></dd>
+            </dl>
+          </div>
+          <p class="muted mt-2" style="font-size:.9em"><span lang="zh-CN">CDC大部分文字属公共领域，但须注明来源且不得暗示政府背书，其标志和部分图片不能自由使用。其他机构、媒体和论文一律自行改写并链接原页，不复制长段文字、图表、照片或标志。</span><span lang="en">Most CDC text is public domain, but requires attribution and no implied endorsement; its logo and some images aren't free to use. For other organisations, media and papers we rewrite in our own words and link the original — never copying long passages, charts, photos or logos.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section bg-2" id="contact">
+    <div class="wrap">
+      <div class="reveal" style="max-width:46em">
+        <span class="eyebrow"><span lang="zh-CN">联系信息</span><span lang="en">Contact</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">有问题、发现错误，或想一起参与？</span><span lang="en">A question, a correction, or want to get involved?</span></h2>
+        <p class="lede mt-2" style="font-size:1.05em"><span lang="zh-CN">咨询和纠错请用公开邮箱；订单问题请联系商品页所列销售方；涉及隐私、儿童安全或紧急风险，请同时联系成人指导人或当地紧急服务。</span><span lang="en">Questions and corrections: public email. Orders: the seller on the product page. Privacy, child safety or urgent risk: also contact our adult advisor or local emergency services.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <h2><span lang="zh-CN">从一件具体的小事开始</span><span lang="en">Start with one small, concrete thing</span></h2>
+          <p><span lang="zh-CN">核验资料、改善网页、协助活动——均有成人监督。</span><span lang="en">Check a fact, improve a page, help at an event — with adult supervision.</span></p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn" href="volunteer.html"><span lang="zh-CN">成为志愿者</span><span lang="en">Volunteer with us</span></a>
+          <a class="btn btn-ghost" href="knowledge.html"><span lang="zh-CN">了解自闭症</span><span lang="en">Understand autism</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="data/articles-knowledge.js"></script>
+<script src="data/articles-parents.js"></script>
+<script src="data/articles-news.js"></script>
+<script src="js/site.js"></script>
+<script>
+(function () {
+  // highlight the in-page nav pill for the section being read
+  var links = document.querySelectorAll(".subnav a[href^='#']");
+  if (!("IntersectionObserver" in window) || !links.length) return;
+  var map = {};
+  links.forEach(function (a) { var s = document.getElementById(a.getAttribute("href").slice(1)); if (s) map[s.id] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.removeAttribute("aria-current"); });
+      map[e.target.id].setAttribute("aria-current", "true");
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  Object.keys(map).forEach(function (id) { io.observe(document.getElementById(id)); });
+})();
+</script>
+</body>
+</html>

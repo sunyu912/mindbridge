@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社群商店 · MindBridge</title>
+<meta name="mb-title-zh" content="社群商店 · MindBridge">
+<meta name="mb-title-en" content="Community Shop · MindBridge">
+<meta name="description" content="MindBridge 社群商店：展示自闭症创作者、家庭项目和支持包容性实践的合作伙伴商品，公开销售方、价格与收入分配。A community shop for autistic creators and inclusive partners, with transparent sellers, prices and revenue sharing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23223a5e'/%3E%3Cpath d='M7 27c4.2-8.5 8.6-12.7 13-12.7S28.8 18.5 33 27' fill='none' stroke='%23f2b089' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>(function(){var d=document.documentElement;try{var q=new URLSearchParams(location.search).get("lang"),s=localStorage.getItem("mb-lang");d.dataset.lang=q||s||"zh";d.lang=d.dataset.lang==="en"?"en":"zh-CN";d.dataset.size=localStorage.getItem("mb-size")||"m";d.dataset.calm=localStorage.getItem("mb-calm")||"off";var t=localStorage.getItem("mb-theme");if(t&&t!=="auto")d.dataset.theme=t;}catch(e){d.dataset.lang="zh";}})();</script>
+<style>
+  .cat { border-radius: var(--radius-lg); padding: clamp(26px, 3.4vw, 40px); display: grid; grid-template-columns: auto 1fr; gap: 6px 22px; align-items: start; border: 1px solid transparent; }
+  .cat .card-icon { grid-row: span 3; margin: 0; background: var(--card); }
+  .cat h3 { font-size: 1.35rem; }
+  .cat p { margin: 0; color: var(--ink-2); font-size: .95em; }
+  .cat .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .cat .tags span.t { font-size: .78rem; padding: 3px 10px; border-radius: 999px; background: var(--card); color: var(--ink-2); border: 1px solid var(--line); }
+  .cat.c1 { background: var(--indigo-soft); } .cat.c2 { background: var(--terra-soft); } .cat.c2 .card-icon { color: var(--terra); }
+  .cat.c3 { background: var(--sage-soft); } .cat.c3 .card-icon { color: var(--sage); } .cat.c4 { background: var(--card); border-color: var(--line); } .cat.c4 .card-icon { background: var(--paper-2); }
+  @media (max-width: 520px) { .cat { grid-template-columns: 1fr; } .cat .card-icon { grid-row: auto; } }
+
+  .pin { width: 32px; height: 32px; border-radius: 50%; background: var(--indigo); color: #fff; display: grid; place-items: center; font: 700 .85rem/1 var(--body); }
+  html[data-theme="dark"] .pin { color: #14181f; }
+  .anat-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: clamp(28px, 5vw, 72px); }
+  .anat-list li { display: grid; grid-template-columns: 40px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .anat-list li:nth-child(-n+2) { border-top: 1px solid var(--line); }
+  @media (max-width: 760px) { .anat-list { grid-template-columns: 1fr; } .anat-list li:nth-child(2) { border-top: 0; } }
+  .anat-list h3 { font-family: var(--body); font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+  .anat-list p { margin: 0; color: var(--ink-2); font-size: .95em; }
+
+  .say { display: grid; gap: 14px; }
+  .say > div { padding: 22px 24px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); display: grid; grid-template-columns: 30px 1fr; gap: 14px; align-items: start; }
+  .say .mk { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; }
+  .say .mk svg { width: 16px; height: 16px; }
+  .say .yes .mk { background: rgba(156,187,149,.25); color: #b9d4b3; }
+  .say .no .mk { background: rgba(242,176,137,.2); color: #f2b089; }
+  .say small { display: block; font: 600 .72rem/1.2 var(--body); letter-spacing: .12em; text-transform: uppercase; color: #9fb0cc; margin-bottom: 6px; }
+  .say q { font-family: var(--display); font-size: 1.15rem; color: #fff; quotes: "“" "”"; }
+  .say .no q { text-decoration: line-through; text-decoration-color: rgba(242,176,137,.8); text-decoration-thickness: 2px; color: #cdd6e6; }
+  .src-line { font-size: .82rem; color: var(--ink-3); margin-top: 14px; display: block; }
+  .bg-ink .src-line { color: #9fb0cc; }
+
+</style>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">社群商店</span><span lang="en">Community shop</span></span>
+        <h1><span lang="zh-CN">每件商品，都说清楚从哪里来、收入去哪里</span><span lang="en">Every item says who made it — and where the money goes</span></h1>
+        <p class="lede"><span lang="zh-CN">展示自闭症创作者、家庭项目和包容性合作伙伴的商品。每件都公开制作方、价格、配送退换责任和收入分配。</span><span lang="en">Work by autistic creators, family projects and inclusive partners. Every item shows who made it, the price, who handles shipping and returns, and how income is shared.</span></p>
+        <div class="btn-row mt-2">
+          <a class="btn btn-terra" href="#creators"><span lang="zh-CN">认识创作者</span><span lang="en">Meet the creators</span></a>
+          <a class="btn btn-ghost" href="#categories"><span lang="zh-CN">查看全部商品</span><span lang="en">See all products</span></a>
+        </div>
+      </div>
+      <div class="page-hero-art reveal">
+        <img src="assets/shop.jpg" data-alt-zh="蓝橙色调插画：社群市集摊位上摆满手绘杯子、笔记本和明信片，一位戴眼镜、系蓝色围裙的摊主微笑着向顾客介绍作品。" data-alt-en="Blue-and-orange painterly illustration: a community market stall full of hand-painted mugs, notebooks and postcards, where a smiling stallholder in glasses and a blue apron shows the work to visitors." alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section bg-2" id="categories">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">商品分类</span><span lang="en">What you'll find</span></span>
+        <h2><span lang="zh-CN">四类商品，同一套透明规则</span><span lang="en">Four kinds of products, one set of rules</span></h2>
+        <p class="lede"><span lang="zh-CN">每一类商品都遵循同样的公开规则：先说明来源、价格与收入分配，再上架。</span><span lang="en">Every category follows the same open rules: origin, price and revenue split are disclosed before anything is listed.</span></p>
+      </div>
+      <div class="grid grid-2">
+        <div class="cat c1 reveal">
+          <span class="card-icon" data-icon="pen"></span>
+          <h3><span lang="zh-CN">自闭症创作者作品</span><span lang="en">Work by autistic creators</span></h3>
+          <p><span lang="zh-CN">由创作者本人或监护人授权展示的原创作品。</span><span lang="en">Original work shown with permission from the creator or their guardian.</span></p>
+          <div class="tags"><span class="t"><span lang="zh-CN">绘画</span><span lang="en">Paintings</span></span><span class="t"><span lang="zh-CN">明信片</span><span lang="en">Postcards</span></span><span class="t"><span lang="zh-CN">印刷品</span><span lang="en">Prints</span></span><span class="t"><span lang="zh-CN">数字作品</span><span lang="en">Digital work</span></span></div>
+        </div>
+        <div class="cat c2 reveal">
+          <span class="card-icon" data-icon="hands"></span>
+          <h3><span lang="zh-CN">手工与生活用品</span><span lang="en">Handmade &amp; everyday goods</span></h3>
+          <p><span lang="zh-CN">经授权制作的手工艺品和日常用品。</span><span lang="en">Crafts and everyday items made with permission.</span></p>
+          <div class="tags"><span class="t"><span lang="zh-CN">手工艺品</span><span lang="en">Crafts</span></span><span class="t"><span lang="zh-CN">文具</span><span lang="en">Stationery</span></span><span class="t"><span lang="zh-CN">家居用品</span><span lang="en">Home goods</span></span></div>
+        </div>
+        <div class="cat c3 reveal">
+          <span class="card-icon" data-icon="link"></span>
+          <h3><span lang="zh-CN">社群合作商品</span><span lang="en">Community partner products</span></h3>
+          <p><span lang="zh-CN">明确披露合作关系与公益金额的商家商品。</span><span lang="en">Partner products that disclose the partnership and the amount for a cause.</span></p>
+          <div class="tags"><span class="t"><span lang="zh-CN">公开合作关系</span><span lang="en">Partnership disclosed</span></span><span class="t"><span lang="zh-CN">公开公益金额</span><span lang="en">Amount disclosed</span></span></div>
+        </div>
+        <div class="cat c4 reveal">
+          <span class="card-icon" data-icon="store"></span>
+          <h3><span lang="zh-CN">项目周边</span><span lang="en">Project merchandise</span></h3>
+          <p><span lang="zh-CN">支持网站维护和志愿活动的非医疗商品。</span><span lang="en">Non-medical items that fund site upkeep and volunteering.</span></p>
+          <div class="tags"><span class="t"><span lang="zh-CN">网站维护</span><span lang="en">Website upkeep</span></span><span class="t"><span lang="zh-CN">志愿活动</span><span lang="en">Volunteer activities</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANATOMY ============ -->
+  <section class="section" id="product-page">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">商品详情页必备字段</span><span lang="en">Anatomy of a product page</span></span>
+        <h2><span lang="zh-CN">每个商品页面必须公开五组信息</span><span lang="en">Five things every product page must show</span></h2>
+      </div>
+      <ol class="anat-list reveal">
+          <li><span class="pin">1</span><div><h3><span lang="zh-CN">商品主体</span><span lang="en">Who's behind it</span></h3><p><span lang="zh-CN">商品名称、制作者或品牌、实际销售方。</span><span lang="en">Product name, maker or brand, and the actual seller.</span></p></div></li>
+          <li><span class="pin">2</span><div><h3><span lang="zh-CN">商品信息</span><span lang="en">Product details</span></h3><p><span lang="zh-CN">材料、尺寸、适用年龄、安全提示及实物与图片差异。</span><span lang="en">Materials, size, ages, safety notes and how it may differ from photos.</span></p></div></li>
+          <li><span class="pin">3</span><div><h3><span lang="zh-CN">交易信息</span><span lang="en">Buying terms</span></h3><p><span lang="zh-CN">价格、税费、运费、配送时间和退换货规则。</span><span lang="en">Price, tax, shipping, delivery time and returns.</span></p></div></li>
+          <li><span class="pin">4</span><div><h3><span lang="zh-CN">收入分配</span><span lang="en">Revenue split</span></h3><p><span lang="zh-CN">创作者收入、项目运营费用、公益金额及受益方。</span><span lang="en">Creator income, running costs, and the amount for a cause plus recipient.</span></p></div></li>
+          <li><span class="pin">5</span><div><h3><span lang="zh-CN">授权与隐私</span><span lang="en">Consent &amp; privacy</span></h3><p><span lang="zh-CN">作品授权、姓名和照片展示同意，未成年人需监护人同意。</span><span lang="en">Usage rights, name and photo consent, and guardian consent for under-18s.</span></p></div></li>
+        </ol>
+    </div>
+  </section>
+
+  <!-- ============ REVENUE ============ -->
+  <section class="section bg-ink" id="revenue">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">收入分配说明</span><span lang="en">How proceeds are shared</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">买东西和捐款，不是一回事</span><span lang="en">Buying something isn't the same as donating</span></h2>
+        <p class="lede mt-2"><span lang="zh-CN">价格、销售方、创作者收入和项目金额都写在商品页；订单完成后按页面分配，并定期公布汇总。</span><span lang="en">Price, seller, creator income and project share are on each product page; we split the money as stated and publish regular summaries.</span></p>
+        <div class="caveat" style="margin-top:28px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
+          <p style="margin:0"><span lang="zh-CN"><b>购买商品等于捐款吗？</b>不一定。只有在符合相关规则并明确说明时，款项才可能属于可抵税的慈善捐款。</span><span lang="en"><b>Is buying the same as donating?</b> Not necessarily. A payment only counts as a tax-deductible charitable donation if the relevant rules are met and this is clearly stated.</span></p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="say">
+          <div class="yes">
+            <span class="mk" data-icon="check"></span>
+            <div><small><span lang="zh-CN">我们会这样写</span><span lang="en">What we say</span></small><q><span lang="zh-CN">销售收入中的一部分将用于指定项目</span><span lang="en">Part of the sales income goes to a named project</span></q></div>
+          </div>
+          <div class="no">
+            <span class="mk" data-icon="close"></span>
+            <div><small><span lang="zh-CN">未取得资格前不会写</span><span lang="en">What we won't say until we qualify</span></small><q><span lang="zh-CN">捐款可抵税</span><span lang="en">Your donation is tax-deductible</span></q></div>
+          </div>
+        </div>
+        <span class="src-line"><span lang="zh-CN">资料来源：IRS Tax Exempt Organization Search · 核验美国免税组织</span><span lang="en">Source: IRS Tax Exempt Organization Search · verify U.S. tax-exempt organisations</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HEALTH CLAIMS ============ -->
+  <section class="section" id="health">
+    <div class="wrap split wide-left">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">商品健康声明</span><span lang="en">Health claims</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">好用的东西，不等于有疗效</span><span lang="en">Helpful isn't the same as therapeutic</span></h2>
+        <div class="note-box mt-3">
+          <span data-icon="shield"></span>
+          <div>
+            <p><span lang="zh-CN">本商店商品不用于诊断、治疗、治愈或预防自闭症及其他健康状况。普通商品、艺术作品和感官友好用品可能改善个人使用体验，但不应被描述为对所有自闭症人士具有医疗效果。</span><span lang="en">Products in this shop are not intended to diagnose, treat, cure or prevent autism or any other health condition. Everyday goods, artwork and sensory-friendly items may make things more comfortable for some people, but they should never be described as having a medical effect for all autistic people.</span></p>
+            <p class="muted" style="font-size:.85rem"><span lang="zh-CN">资料来源：FTC Health Claims · 健康功效宣传必须真实并有证据</span><span lang="en">Source: FTC Health Claims · health claims must be truthful and backed by evidence</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card" style="padding:32px">
+          <h3 style="font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:8px"><span lang="zh-CN">商品页面不会出现的说法</span><span lang="en">Claims you won't see here</span></h3>
+          <p class="muted" style="font-size:.9rem"><span lang="zh-CN">购买自闭症相关产品时，请警惕：</span><span lang="en">With any autism-related product, be wary of:</span></p>
+          <ul class="checks crosses">
+            <li><span><span lang="zh-CN">“治愈自闭症”</span><span lang="en">“Cures autism”</span></span></li>
+            <li><span><span lang="zh-CN">“快速见效”</span><span lang="en">“Fast results”</span></span></li>
+            <li><span><span lang="zh-CN">“人人适用”</span><span lang="en">“Works for everyone”</span></span></li>
+            <li><span><span lang="zh-CN">“无需专业评估”</span><span lang="en">“No professional assessment needed”</span></span></li>
+          </ul>
+          <p class="muted mt-2" style="font-size:.82rem;margin-bottom:0"><span lang="zh-CN">资料来源：FDA Medication Health Fraud · 自闭症相关产品警示</span><span lang="en">Source: FDA Medication Health Fraud · warnings on autism-related products</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATUS / CREATORS ============ -->
+  <section class="section bg-2" id="creators">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">社群创作者征集</span><span lang="en">Call for creators</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">欢迎创作者加入</span><span lang="en">Creators, come join us</span></h2>
+        <p class="lede mt-2"><span lang="zh-CN">欢迎创作者或监护人提交作品。参与完全自愿，署名、定价、报酬和授权范围事先约定。</span><span lang="en">Creators or their guardians are welcome to submit work. Taking part is voluntary; credit, pricing, pay and usage rights are agreed in advance.</span></p>
+        <div class="btn-row mt-2">
+          <a class="btn btn-terra" href="about.html"><span lang="zh-CN">联系项目，提交作品</span><span lang="en">Contact us to submit work</span></a>
+          <a class="btn btn-ghost" href="volunteer.html#roles"><span lang="zh-CN">成为创作者支持志愿者</span><span lang="en">Volunteer as creator support</span></a>
+        </div>
+        <div class="page-hero-art mt-3">
+          <img src="assets/shop2.jpg" data-alt-zh="蓝橙色调插画：明亮的画室里，一位年轻创作者微笑着在画架上绘制蓝橙色放射状图案，身后挂着一排作品，同伴们拿着画笔和作品围在一旁。" data-alt-en="Blue-and-orange painterly illustration: in a bright studio a young creator smiles while painting a radiant blue-and-orange pattern on an easel, with a line of prints hanging behind and fellow artists holding brushes and work nearby." alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="status-list">
+          <div class="status"><span class="ic" style="color:var(--sage)" data-icon="pen"></span><div><h4><span lang="zh-CN">创作者征集</span><span lang="en">Call for creators</span></h4><p><span lang="zh-CN">公开授权、定价与收入分配规则</span><span lang="en">Open rules on consent, pricing and revenue</span></p></div></div>
+        </div>
+        <div class="card mt-2">
+          <h3 style="font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px"><span lang="zh-CN">开店前将公开</span><span lang="en">Published before the shop opens</span></h3>
+          <ul class="checks" style="margin-top:14px">
+            <li><span><span lang="zh-CN">销售主体</span><span lang="en">Seller of record</span></span></li>
+            <li><span><span lang="zh-CN">收款主体</span><span lang="en">Payee</span></span></li>
+            <li><span><span lang="zh-CN">运营主体或财政赞助机构</span><span lang="en">Operating entity or fiscal sponsor</span></span></li>
+            <li><span><span lang="zh-CN">每件商品的公益金额或比例及受益方</span><span lang="en">Per-item amount or share for a cause, and recipient</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <h2><span lang="zh-CN">不买东西，也可以支持</span><span lang="en">You can support without buying anything</span></h2>
+          <p><span lang="zh-CN">浏览作品、分享故事、参加活动或做志愿者，同样有价值。</span><span lang="en">Browsing, sharing stories, joining events and volunteering matter just as much.</span></p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn" href="volunteer.html"><span lang="zh-CN">成为志愿者</span><span lang="en">Volunteer with us</span></a>
+          <a class="btn btn-ghost" href="partners.html"><span lang="zh-CN">成为合作伙伴</span><span lang="en">Become a partner</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

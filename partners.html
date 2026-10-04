@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社群合作伙伴 · MindBridge</title>
+<meta name="mb-title-zh" content="社群合作伙伴 · MindBridge">
+<meta name="mb-title-en" content="Community Partners · MindBridge">
+<meta name="description" content="MindBridge 社群合作伙伴：公开的合作标准、关系披露与申请方式。Community partners: open standards, disclosure and how to apply.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23223a5e'/%3E%3Cpath d='M7 27c4.2-8.5 8.6-12.7 13-12.7S28.8 18.5 33 27' fill='none' stroke='%23f2b089' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>(function(){var d=document.documentElement;try{var q=new URLSearchParams(location.search).get("lang"),s=localStorage.getItem("mb-lang");d.dataset.lang=q||s||"zh";d.lang=d.dataset.lang==="en"?"en":"zh-CN";d.dataset.size=localStorage.getItem("mb-size")||"m";d.dataset.calm=localStorage.getItem("mb-calm")||"off";var t=localStorage.getItem("mb-theme");if(t&&t!=="auto")d.dataset.theme=t;}catch(e){d.dataset.lang="zh";}})();</script>
+<style>
+  .ptypes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .ptype { border-radius: var(--radius-lg); padding: 30px; background: var(--card); border: 1px solid var(--line); display: grid; gap: 8px; align-content: start; }
+  .ptype .card-icon { margin-bottom: 10px; }
+  .ptype h3 { font-size: 1.3rem; }
+  .ptype p { margin: 0; color: var(--ink-2); font-size: .95em; }
+  .ptype.lead { background: var(--indigo); border-color: transparent; color: #f3efe7; }
+  .ptype.lead h3 { color: #fff; font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
+  .ptype.lead p { color: #d4dcea; }
+  .ptype.lead .eyebrow { color: #f2b089; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ptype.lead { background: #1b2a42; } }
+  :root[data-theme="dark"] .ptype.lead { background: #1b2a42; }
+  @media (max-width: 960px) { .ptypes { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .ptypes { grid-template-columns: 1fr; } }
+
+  .std { counter-reset: sd; list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  .std li { counter-increment: sd; display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 22px 0; border-top: 1px solid var(--line); align-items: start; }
+  .std li::before { content: counter(sd, decimal-leading-zero); font: 500 1.5rem/1.2 var(--serif-en); color: var(--terra); }
+  .std li span { padding-top: 4px; }
+  @media (max-width: 760px) { .std { grid-template-columns: 1fr; } }
+
+  .disclose { font-family: var(--display); font-size: clamp(1.3rem, 2.6vw, 1.85rem); line-height: 1.55; color: #fff; margin: 0; padding-left: 28px; border-left: 3px solid #f2b089; max-width: 34em; }
+
+</style>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">社群合作伙伴</span><span lang="en">Community partners</span></span>
+        <h1><span lang="zh-CN">合作，从公开说明开始</span><span lang="en">Partnership starts with being open</span></h1>
+        <p class="lede"><span lang="zh-CN">欢迎提供商品、场地、技能、实习或资金的机构和商家。每段合作关系都公开说明，并定期复核。</span><span lang="en">For organisations and businesses offering products, space, skills, internships or funding. Every relationship is disclosed and regularly reviewed.</span></p>
+        <div class="btn-row mt-2">
+          <a class="btn btn-terra" href="#standards"><span lang="zh-CN">查看合作伙伴标准</span><span lang="en">See partner standards</span></a>
+          <a class="btn btn-ghost" href="#apply"><span lang="zh-CN">提交合作申请</span><span lang="en">Apply to partner</span></a>
+        </div>
+      </div>
+      <div class="page-hero-art reveal">
+        <img src="assets/partners.jpg" data-alt-zh="蓝橙色调插画：四位来自小店和机构的伙伴围坐在圆桌旁，拿着笔记本、平板和文件微笑着讨论合作，窗外是蓝色山峦和橙色太阳。" data-alt-en="Blue-and-orange painterly illustration: four partners from local shops and organisations sit around a round table with notepads, a tablet and papers, smiling as they plan together, blue hills and an orange sun beyond the windows." alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNER TYPES ============ -->
+  <section class="section bg-2" id="types">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">合作方式</span><span lang="en">Ways to partner</span></span>
+        <h2><span lang="zh-CN">五种支持方式，每一种都公开说明</span><span lang="en">Five ways to help — each one disclosed</span></h2>
+      </div>
+      <div class="ptypes">
+        <div class="ptype lead reveal">
+          <span class="eyebrow"><span lang="zh-CN">每位伙伴都会公开</span><span lang="en">For every partner we publish</span></span>
+          <h3><span lang="zh-CN">双方关系、支持方式和有效期限</span><span lang="en">The relationship, the support given and how long it lasts</span></h3>
+          <p><span lang="zh-CN">定期复核，错误及时更正。</span><span lang="en">Reviewed regularly; mistakes corrected promptly.</span></p>
+        </div>
+        <div class="ptype reveal">
+          <span class="card-icon terra" data-icon="store"></span>
+          <h3><span lang="zh-CN">商品</span><span lang="en">Products</span></h3>
+          <p><span lang="zh-CN">在社群商店展示，并披露合作关系与公益金额。</span><span lang="en">List in the shop, with the partnership and any amount for a cause disclosed.</span></p>
+        </div>
+        <div class="ptype reveal">
+          <span class="card-icon sage" data-icon="map"></span>
+          <h3><span lang="zh-CN">场地</span><span lang="en">Space</span></h3>
+          <p><span lang="zh-CN">为社群活动提供场地，最好能安排安静空间。</span><span lang="en">Host community events — ideally with room for a quiet space.</span></p>
+        </div>
+        <div class="ptype reveal">
+          <span class="card-icon" data-icon="pen"></span>
+          <h3><span lang="zh-CN">技能</span><span lang="en">Skills</span></h3>
+          <p><span lang="zh-CN">为网站、活动或创作者提供专业技能支持。</span><span lang="en">Lend professional skills to the website, events or creators.</span></p>
+        </div>
+        <div class="ptype reveal">
+          <span class="card-icon terra" data-icon="briefcase"></span>
+          <h3><span lang="zh-CN">实习机会</span><span lang="en">Internships</span></h3>
+          <p><span lang="zh-CN">提供包容性实习或工作，经基本核验后展示。</span><span lang="en">Inclusive internships or jobs, listed after basic checks.</span></p>
+        </div>
+        <div class="ptype reveal">
+          <span class="card-icon sage" data-icon="heart"></span>
+          <h3><span lang="zh-CN">资金支持</span><span lang="en">Funding</span></h3>
+          <p><span lang="zh-CN">资助网站维护或志愿活动，金额和用途公开。</span><span lang="en">Fund site upkeep or volunteering; amounts and uses made public.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STANDARDS ============ -->
+  <section class="section" id="standards">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">合作伙伴基本标准</span><span lang="en">Partner standards</span></span>
+        <h2><span lang="zh-CN">公开标准，而非私下认证</span><span lang="en">Open standards, not a seal of approval</span></h2>
+      </div>
+      <ol class="std reveal">
+        <li><span><span lang="zh-CN">提供真实名称、地址、网站和负责人联系方式。</span><span lang="en">Provide your real name, address, website and a responsible contact person.</span></span></li>
+        <li><span><span lang="zh-CN">不宣传未经证实的自闭症治疗、治愈或健康功效。</span><span lang="en">Make no unproven claims about treating or curing autism, or other health benefits.</span></span></li>
+        <li><span><span lang="zh-CN">清楚披露价格、退款、赞助、佣金和公益金额。</span><span lang="en">Clearly disclose prices, refunds, sponsorships, commissions and any amount for a good cause.</span></span></li>
+        <li><span><span lang="zh-CN">取得作品、姓名、照片和个人故事的使用授权。</span><span lang="en">Get permission before using anyone's work, name, photo or personal story.</span></span></li>
+        <li><span><span lang="zh-CN">尊重自闭症人士的沟通方式、隐私和选择。</span><span lang="en">Respect autistic people's ways of communicating, their privacy and their choices.</span></span></li>
+        <li><span><span lang="zh-CN">愿意配合项目定期复核和纠正错误信息。</span><span lang="en">Be willing to take part in regular reviews and to correct wrong information.</span></span></li>
+      </ol>
+      <div class="note-box terra mt-3 reveal">
+        <span data-icon="alert"></span>
+        <div>
+          <p><span lang="zh-CN"><b>这不是认证。</b>列入本栏目不代表医疗资质认证，也不代表本站为其全部产品和服务担保。购买或接受服务前，请自行核验价格、资质、合同和退费规则。</span><span lang="en"><b>This is not a certification.</b> A listing is not a medical credential, and we don't vouch for all of a partner's products and services. Before buying or using a service, check prices, qualifications, contracts and refund policies yourself.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DISCLOSURE ============ -->
+  <section class="section bg-ink" id="disclosure">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span lang="zh-CN">合作关系披露</span><span lang="en">Disclosure</span></span>
+        <h2><span lang="zh-CN">任何利益关系，都写在明处</span><span lang="en">Every interest, out in the open</span></h2>
+      </div>
+      <p class="disclose reveal"><span lang="zh-CN">本页面包含合作伙伴提供的商品或服务信息。若本项目获得赞助、免费商品、推荐佣金或销售分成，将在相应页面清楚说明。合作关系不会改变我们对来源、价格和健康宣传的核验标准。</span><span lang="en">This page includes information about products or services offered by partners. If the project receives sponsorship, free products, referral commissions or a share of sales, we will say so clearly on the relevant page. A partnership never changes how we check sources, prices or health claims.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ STATUS ============ -->
+  <section class="section" id="status">
+    <div class="wrap split" style="align-items:center">
+      <div class="reveal">
+        <span class="eyebrow"><span lang="zh-CN">项目进展</span><span lang="en">Where we are</span></span>
+        <h2 class="mt-1" style="font-size:clamp(1.8rem,3.6vw,2.6rem)"><span lang="zh-CN">我们正在寻找首批合作伙伴</span><span lang="en">We're looking for our first partners</span></h2>
+        <p class="lede mt-2"><span lang="zh-CN">取得书面授权并完成核验后，才会展示名称和标志。</span><span lang="en">We only show a name and logo after written permission and verification.</span></p>
+      </div>
+      <div class="reveal">
+        <div class="page-hero-art">
+          <img src="assets/partners2.jpg" data-alt-zh="蓝橙色调插画：温暖的社区咖啡馆里，一位店员弯腰把热饮递给戴降噪耳机、坐轮椅的孩子，周围长者和朋友们围桌喝茶，是一个包容友好的合作场地。" data-alt-en="Blue-and-orange painterly illustration: in a warm community café, a staff member bends to hand a hot drink to a child in a wheelchair wearing noise-cancelling headphones, while older adults and friends chat over tea — an inclusive partner venue." alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPLY ============ -->
+  <section class="section-tight" id="apply" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <h2><span lang="zh-CN">提交合作申请</span><span lang="en">Apply to become a partner</span></h2>
+          <p><span lang="zh-CN">申请时请写明机构真实名称、地址、网站和联系人，希望提供的支持，以及涉及的价格、佣金或公益金额。</span><span lang="en">When you apply, include your real name, address, website and contact person, the support you'd offer, and any prices, commissions or amounts for a cause.</span></p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn" href="about.html#contact"><span lang="zh-CN">联系我们申请合作</span><span lang="en">Contact us to apply</span></a>
+          <a class="btn btn-ghost" href="#standards"><span lang="zh-CN">再看一遍标准</span><span lang="en">Review the standards</span></a>
+        </div>
+      </div>
+      <p class="muted center mt-2" style="font-size:.85rem"><span lang="zh-CN">合作机构书面授权、商家披露及学校名称和标志使用许可，均在发布前确认。</span><span lang="en">Partner written permission, business disclosures and any school name or logo permission are confirmed before publishing.</span></p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

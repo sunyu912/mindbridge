@@ -1,0 +1,6 @@
+source/
+.claude/
+.vercel/
+.env*
+mindbridge-site.zip
+.DS_Store
